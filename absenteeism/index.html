@@ -119,6 +119,15 @@
                     <br>
             </div>
 
+            <div id="" class="section scrollspy">
+
+              <h4> Our Y Variable - What are we predicting? </h4>
+              <center>
+              <img class="img-fluid" src="../absenteeism/img/hours.png"></center>
+              <br><br>
+
+
+            </div>
 
             <div id="process" class="section scrollspy">
               <h2> The Process </h2><br>
@@ -156,12 +165,6 @@
 
             </div>
 
-            <div id="features" class="section scrollspy">
-              <div class="plot">
-               <p></p>
-              </div>
-
-          </div>
         </div>
       </div>
           <!--- end of first column -->
@@ -170,14 +173,91 @@
         <h4> Exploring Variables </h4>
         <br>
           <center>
-            <img class="img-fluid" src="../img/exploredata1.png">
-            <img class="img-fluid" src="../img/exploredata2.png">
+            <img class="img-fluid" src="../absenteeism/img/exploredata1.png">
+            <img class="img-fluid" src="../absenteeism/img/exploredata2.png">
+            <img class="img-fluid" src="../absenteeism/img/exploredata3.png">
           </center> <br><br>
 
           <h4> Examining Features </h4>
-          <img class="img-fluid" src="../img/top4feats.png">
-          <img class="img-fluid" src="../img/allfeats.png">
+          <h6> Using Random Forest to target most important features </h6>
+          <p>
+          <pre>from sklearn.ensemble import RandomForestRegressor
+              model3= RandomForestRegressor(n_estimators=100)</pre></p>
+          <img class="img-fluid" src="../absenteeism/img/top4feats.png">
+          <img class="img-fluid" src="../absenteeism/img/allfeats.png">
           <br><br>
+
+
+          <h4> Linear Regression </h4>
+          <p> <pre> <code class = "language-python">
+            from sklearn.linear_model import LinearRegression
+            model1 = LinearRegression()
+            model1.fit(X_train, y_train)
+
+            # Use our model to predict a value
+            y_predicted = model1.predict(X_test)
+            y_predicted = np.round_(y_predicted,0)
+
+            # Score the prediction with mse and r2
+            from sklearn.metrics import mean_squared_error, r2_score
+
+            mse = mean_squared_error(y_test, y_predicted)
+            r2 = r2_score(y_test, y_predicted)
+
+            print(f"Mean Squared Error (MSE): {mse}")
+            print(f"R squared (R2 ): {r2}")
+          </code>
+        </pre><center>
+        Mean Squared Error (MSE): 14.028571428571428<br>
+        R squared (R2 ): 0.2603730951836558<br>
+          <img class="img-fluid" src="../absenteeism/img/linear.png">
+        </center><br><br>
+
+        <h4> Decision Tree </h4>
+        <p> <pre> <code class = "language-python">
+          from sklearn.tree import DecisionTreeRegressor
+          model2.fit(Xn_train, yn_train)
+
+          # Use our model to predict a value
+          yn2_predicted = model2.predict(Xn_test)
+
+          # Score the prediction with mse and r2
+          mse = mean_squared_error(yn_test, yn2_predicted)
+          r2 = r2_score(yn_test, yn2_predicted)
+
+          print(f"Mean Squared Error (MSE): {mse}")
+          print(f"R-squared (R2 ): {r2}")
+            </code>
+          </pre><center>
+
+        Mean Squared Error (MSE): 10.507370470771278<br>
+        R-squared (R2 ): 0.446021005158997<br>
+        <img class="img-fluid" src="../absenteeism/img/dt.png">
+      </center><br><br>
+
+      <h4> Random Forest </h4>
+      <p> <pre> <code class = "language-python">
+      from sklearn.ensemble import RandomForestRegressor
+      model3= RandomForestRegressor(n_estimators=100)
+
+      model3.fit(Xn_train, yn_train)
+
+      # Use our model to predict a value
+      yn3_predicted = model3.predict(Xn_test)
+
+      # Score the prediction with mse and r2
+      mse = mean_squared_error(yn_test, yn3_predicted)
+      r2 = r2_score(yn_test, yn3_predicted)
+
+      print(f"Mean Squared Error (MSE): {mse}")
+      print(f"R-squared (R2 ): {r2}")
+      </code>
+    </pre><center>
+      Mean Squared Error (MSE): 9.913970015454096<br>
+      R-squared (R2 ): 0.47730679532783604<br>
+
+      <img class="img-fluid" src="../absenteeism/img/rf.png">
+    </center><br><br>
 
 
         </div>
@@ -185,8 +265,62 @@
 
         <div class = "container-fluid colflex-column ml-auto mr-auto">
           <div id ="Conclusion">
-            <h2> Conclusion </h2>
+            <h2> Conclusion </h2><br>
+            <div class= "row">
+            <div class = "col-sm">
+              <h4> Summary Statistics </h4>
+            <h6>Lets get to know the employees</h6><br>
+            1. 85% have high school level education. The remaining 15% have graduate, postgraduate and/or doctorate education. <br>
+            2. 68% of employees have 1, 2, 3 or 4 kids.<br>
+            3. 63% of employees are social drinkers.<br>
+            4. 93% of employees are social smokers.<br>
+            5. 61% of employees don't have pets. 24% have one pet<br><br>
 
+
+
+            <h5>The average employee</h5>
+
+            1. Lives 29 kilometers from work <br>
+            2. Has service time of 12. (Dataset is unclear about the unit of measurement)<br>
+            3. Is 36.25 years old<br>
+            4. Has 1 son<br>
+            5. Has .78 pets<br>
+            6. Missed 7.36 of work over the 4 year period<br>
+            <br><br>
+
+
+            <h4>Model Evaluation</h4><br>
+
+            <p>
+            	We have seen the Root Mean Square Error (RMSE) and R-Squared Value of different models. Root Mean Square Error (RMSE) is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are, RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit. Whereas R-squared is a relative measure of fit, RMSE is an absolute measure of fit. As the square root of a variance, RMSE can be interpreted as the standard deviation of the unexplained variance, and has the useful property of being in the same units as the response variable. Lower values of RMSE and higher value of R-Squared Value indicate better fit.
+            </p><br>
+            <h4>Model Selection</h4>
+            <p>From the observation of all RMSE Value and R-Squared Value we have concluded that Linear Regression Model  has minimum value of RMSE and it’s R-Squared Value is also maximum (i.e. 1).
+            The RMSE value of Testing data and Training does not differs a lot this implies that it is not the case of overfitting.
+          </p><br>
+            <h4>Key Insights</h4>
+
+            The Changes which company should bring to reduce the number of absenteeism –<br>
+            1.	We find that employees with low education have maximum absentee time.<br>
+            2.	Employees who are social smoker have more absentee hours than non-smokers.<br>
+            3. Top reasons for absenteeism: <br>
+            <p><center>
+            &#9635; Diseases of the musculoskeletal system and connective tissue<br>
+            &#9635; Injury, poisoning and certain other consequences of external causes <br>
+            &#9635; Medical consultation <br>
+            &#9635; Dental consultation <br> </p/center>
+
+
+
+            <br>
+
+
+            <br>
+            <br>
+            <br>
+
+
+          </div>
 
           </div>
 
