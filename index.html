@@ -1,54 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Add link to Bootstrap CDN below: -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Laura Sun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <title>Laura Sun</title>
 </head>
+<body data-spy="scroll" data-target=".sidebar" data-offset="50">
 
-<body>
+<!-- sidebar over here! -->
+  <div class="sidebar">
+    <center>
+      <br><br><br><br>
+    <img class="image-cropper" src="/avatar.jpg" alt="avatar" class="profile-pic">
+    <h2>Laura Sun</h2>
+    <p>Los Angeles based developer with a focus in data analytics and visualizations. </p>
+    <a href="#about">about me</a>
+    <a href="#projects">projects</a>
+    <a href="www.github.com/lsunl">github</a>
+    <a href="www.twitter.com/_lsunl">twitter</a>
+    <a href="www.instagram.com/g0ldenduck">instagram</a>
+    <a href="www.linkedin.com/in/sunlaura">linkedin</a>
+    <h4>
+    sun.laura@outlook.com</h4>
+  </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-monospace sticky-top">
-    <a class="navbar-brand" href="#"><h3>Laura Sun</h3></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+  <!-- content over here! -->
+  <div class="content container-fluid">
+    <div class="scrollspy" id="about">
+      <h1>Hi, I'm Laura. </h1>
+      <p>Sociology @ UCR. Data Analytics boot camp @ USC. Passionate about exploring data, building stuff and learning new things.</p> <p>Currently focused on developing expertise in database development + data modeling.</p>
+      <br>
+      <h3>Tech Stack</h3>
+      <ul style="list-style-type:disc;">
+      <li>Python</li>
+      <li>Tea</li>
+      <li>Milk</li>
       </ul>
     </div>
-  </nav>
+    <div class="scrollspy" id="projects">
+      <h1>world wide waste</h1>
+      source: <a href = "https://github.com/lsunl/plastic-pollution-project">github.com/lsunl/plastic-pollution-project</a>
+      <p>This project analyzed and visualized the flow of plastic pollution at a global level using HTML/CSS, Python & Flask and SQLite.</p><br>
 
+      <h1>US census scatter plot</h1>
+      source: <a href = "https://github.com/lsunl/census-visual-d3">github.com/lsunl/census-visual-d3</a>
+      <p>I used d3 to create an interactive scatter plot that examines the relationships between obesity, smoking rate, lack of health care vs poverty, age and household income. The dataset is from the US census 2014.</p><br>
 
+      <h1>absenteeism & machine learning</h1>
+      source: <a href = "https://github.com/lsunl/project-LA">github.com/lsunl/project-LA</a><br>
+      notebook: <a href = "https://lsunl.github.io/absenteeism/"> view here </a>
+      <p>This project uses a machine learning approach to conduct exploratory analysis on employee absenteeism. We explore different ML models through Scikit-learn, a Python machine learning library, and data modification techniques through Pandas, a Python data manipulation library, to predict and evaluate hours of absenteeism. Dataset is derived from a Brazilian courier and dated between July 2007 to July 2010.</p><br>
 
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
-
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>

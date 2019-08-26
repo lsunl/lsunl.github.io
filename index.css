@@ -1,0 +1,87 @@
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.profile-pic {
+  display: inline;
+  margin: auto;
+  height: auto;
+  width: auto;
+}
+
+body {
+  margin: 100;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.scrollspy {
+  background-color: whitesmoke;
+  padding-top:50px;
+  height:100%;
+  /* color: #fff; */
+}
+
+
+
+.sidebar {
+  margin: 50;
+  padding: 50;
+  width: 250px;
+  background-color: whitesmoke;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: black;
+  font-weight: bold;
+
+}
+
+.sidebar a:hover:not(.active) {
+  color: black;
+  font-weight: bold;
+}
+
+div.content {
+  margin-left: 400px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
