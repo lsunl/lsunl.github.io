@@ -80,6 +80,7 @@ body {
 .index-wrapper > .header > .menu a:hover:not(.active) {
   color: white;
   font-weight: bold;
+  font-style: italic;
   transition: .3s;
 }
 
@@ -126,7 +127,7 @@ body {
   /* filter: grayscale(100%); */
 }
 
-.social-media-links img:hover {
+.social-media-links a:hover {
   transform: scale(1.2);
   transition: .3s;
   /* filter: grayscale(100%); */
