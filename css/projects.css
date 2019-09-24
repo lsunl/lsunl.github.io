@@ -24,6 +24,12 @@
 .projects-wrapper > .project-item img {
   width: 500px;
   border:1px solid #021a40;
+  
+}
+
+.projects-wrapper > .project-item:hover {
+  transform: scale(1.1);
+  /* transition: .3s; */
 }
 
 .projects-wrapper > .project-item > .description {
