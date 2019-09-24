@@ -10,67 +10,59 @@
 
     gtag('config', 'UA-146465940-1');
   </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles.css" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
+  <link href="../css/about.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
   <title>Laura Sun</title>
-</head>
-<body data-spy="scroll" data-target=".sidebar" data-offset="50">
+  </head>
+<body>
 
-<!-- sidebar over here! -->
-  <div class="sidebar">
-    <center>
-      <br><br><br><br>
-    <img class="image-cropper" src="img/avatar.jpg" alt="avatar" class="profile-pic">
-    <h2>Laura Sun</h2>
-    <p>Los Angeles based developer with a focus in data analytics and visualizations. </p>
-    <a href="#about">about me</a>
-    <a href="#projects">projects</a>
-    <a href="https://github.com/lsunl">github</a>
-    <a href="https://www.twitter.com/_lsun">twitter</a>
-    <a href="https://www.instagram.com/g0ldenduck">instagram</a>
-    <a href="https://www.linkedin.com/in/sunlaura">linkedin</a>
-    <h4>
-    sun.laura@outlook.com</h4>
-  </div>
-
-  <!-- content over here! -->
-  <div class="content container-fluid">
-    <div class="scrollspy" id="about">
-      <h1>Hi, I'm Laura. </h1>
-      <p>Sociology @ UCR. Data Analytics boot camp @ USC. Passionate about exploring data and learning new things.</p>
-
-      <br>
-      <h3>Tech Stack</h3>
-      <ul style="list-style-type:disc;">
-      <li>Languages: Python, SQL, Javascript</li>
-      <li>Frameworks: pandas, plotly, Flask, SQLAlchemy, matplotlib, seaborn, d3, bootstrap</li>
-      <li>Databases: MySQL, SQLite, MongoDB</li>
-      <li>Other tools: Excel, Tableau, Git, Jupyter Notebook, CoLab</li>
-      </ul>
+  <div class ="index-wrapper">
+    <div class="fixed-nav">
+      <div class ="email">
+        <h4>sun.laura@outlook.com</h4>
+      </div>
     </div>
-    <div class="scrollspy" id="projects">
-      <h1>world wide waste</h1>
-      source: <a href = "https://github.com/lsunl/plastic-pollution-project">github.com/lsunl/plastic-pollution-project</a>
-      <p>This project analyzed and visualized the flow of plastic pollution at a global level using HTML/CSS, Python & Flask and SQLite.</p><br>
 
-      <h1>US census scatter plot</h1>
-      source: <a href = "https://github.com/lsunl/census-visual-d3">github.com/lsunl/census-visual-d3</a>
-      <p>I used d3 to create an interactive scatter plot that examines the relationships between obesity, smoking rate, lack of health care vs poverty, age and household income. The dataset is from the US census 2014.</p><br>
+    <div class="header">
+      <div class="header-text">
+        <h1>Hi, I'm Laura -</h1>
+         a developer who loves exploring data.
+       </div>
+       <div class="menu">
+         <a href="projects.html">projects</a>
+         <a href="about.html">about</a>
+       </div>
+    </div>
 
-      <h1>absenteeism & machine learning</h1>
-      source: <a href = "https://github.com/lsunl/project-LA">github.com/lsunl/project-LA</a><br>
-      notebook: <a href = "https://lsunl.github.io/absenteeism/"> view here </a>
-      <p>This project uses a machine learning approach to conduct exploratory analysis on employee absenteeism. We explore different ML models through Scikit-learn, a Python machine learning library, and data modification techniques through Pandas, a Python data manipulation library, to predict and evaluate hours of absenteeism. Dataset is derived from a Brazilian courier and dated between July 2007 to July 2010.</p><br>
+    <div class="projects">
 
-  <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </div>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <div class="footer">
+      <div class ="footer-text">
+  
+      </div>
+
+    <div class="social-media-links">
+      <a href="https://github.com/lsunl" target="_blank">
+        <img id ="gh" src="/img/github.svg"></a>
+      <a href="https://www.linkedin.com/in/sunlaura" target="_blank">
+        <img src="/img/linkedin.svg" target="_blank"></a>
+      <a href="https://www.twitter.com/_lsun">
+        <img id ="tw" src="/img/twitter.svg" target="_blank"></a>
+    </div>
+    </div>
+
+
+  </div> <!-- end of index-wrapper -->
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

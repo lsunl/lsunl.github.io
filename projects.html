@@ -1,55 +1,110 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Add link to Bootstrap CDN below: -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146465940-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <title>Projects Page</title>
+    gtag('config', 'UA-146465940-1');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="../css/projects.css" rel="stylesheet">
+  <link href="../css/about.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+  <title>Laura Sun</title>
 </head>
+
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-monospace sticky-top">
-    <a class="navbar-brand" href="#"><h3>Laura Sun</h3></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+  <div class ="index-wrapper">
+    <div class="name">
+      <a href="index.html"><h1>Laura <span id="sun">Sun</span></h1>: projects</a>
     </div>
-  </nav>
+    <div class="fixed-nav">
+      <div class = "email">
+        <h4>sun.laura@outlook.com</h4>
+      </div>
+
+      <div class="menu-tab">
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </div>
+    </div>
+
+    <div class="projects-wrapper">
+      <div class = "project-item">
+        <div class ="photo">
+          <img src="../img/version1.gif">
+        </div>
+        <div class ="description">
+          <div class="title">
+          <h2>Peep </h2>
+          <p>This project uses Tweepy to pull any user's tweet history from Twitter's API and provides a real time search for key words. Peep also offers an API with summary statistics on the user's tweets.</p><br>
+          source: <a href = "https://github.com/itsdsun/peep">github.com/itsdsun/peep</a>
+        </div>
+        </div>
+      </div>
+
+      <div class = "project-item">
+        <div class = "photo">
+          <img src="../img/census.gif">
+        </div>
+        <div class ="description">
+          <div class="title">
+          <h2>US Census Scatter Plot</h2>
+          <p>I used d3 to create an interactive scatter plot that examines the relationships between obesity, smoking rate, lack of health care vs poverty, age and household income. The dataset is from the US census 2014.</p><br>
+          source: <a href = "https://github.com/lsunl/census-visual-d3">github.com/lsunl/census-visual-d3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class = "project-item">
+        <div class = "photo">
+          <img src="../img/ml-pic.jpg">
+          </div>
+        <div class ="description">
+          <div class="title">
+            <h2>Absenteeism & Machine Learning</h2>
+            <p>This project uses a machine learning approach to conduct exploratory analysis on employee absenteeism. We explore different ML models through Scikit-learn, a Python machine learning library, and data modification techniques through Pandas, a Python data manipulation library, to predict and evaluate hours of absenteeism. Dataset is derived from a Brazilian courier and dated between July 2007 to July 2010.</p><br>
+            notebook: <a href = "https://lsunl.github.io/absenteeism/"> view here </a><br>
+            source: <a href = "https://github.com/lsunl/project-LA">github.com/lsunl/project-LA</a><br>
+          </div>
+        </div>
+      </div>
 
 
-<br>
-<a href = "citydata-dashboard/home.html" class= "text-monospace">Weather data dashboard</a>
-<a href = "absenteeism.html" class= "text-monospace">Absenteeism + Machine Learning</a>
 
-
-  <hr>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </div>
 
 
 
+
+
+    <div class="footer">
+      <div class ="footer-text">
+        
+      </div>
+      <div class="social-media-links">
+        <a href="https://github.com/lsunl" target="_blank">
+          <img id ="gh" src="/img/github.svg"></a>
+        <a href="https://www.linkedin.com/in/sunlaura" target="_blank">
+          <img src="/img/linkedin.svg" target="_blank"></a>
+        <a href="https://www.twitter.com/_lsun">
+          <img id ="tw" src="/img/twitter.svg" target="_blank"></a>
+      </div>
+
+    </div>
+
+  </div> <!-- end of index-wrapper -->
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

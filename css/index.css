@@ -1,0 +1,120 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  /* margin: 0; */
+  /* font-size: 13.5; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow-x:hidden;
+}
+
+.index-wrapper {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 1fr;
+
+  /* grid-gap: 20px; */
+
+}
+
+.index-wrapper > .fixed-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding-right: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.index-wrapper > .fixed-nav > .email > h4 {
+  /* font-size: 1.5vw; */
+  /* overflow: hidden; */
+  text-align: right;
+  font-family: monospace;
+  margin-bottom: auto;
+}
+
+.index-wrapper > .header {
+  background-color: white;
+  font-size: 1.5em;
+
+}
+
+.index-wrapper > .header > .header-text {
+  height: 25vh;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+.index-wrapper > .header > .header-text > h1{
+  font-family: monospace;
+}
+
+.index-wrapper > .header > .menu {
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.index-wrapper > .header > .menu a {
+  background-color: black;
+  padding: 1px 20px;
+  color: white;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.index-wrapper > .header > .menu a.active {
+  font-weight: bold;
+}
+
+.index-wrapper > .header > .menu a:hover:not(.active) {
+  color: white;
+  font-weight: bold;
+  transition: .3s;
+}
+
+
+
+.index-wrapper > .projects {
+  margin: 20px;
+
+}
+
+.index-wrapper > .footer {
+  margin: 0px 0px -10px -10px;
+  width: 100%;
+  background-color: white;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* height: 2.5rem; */
+
+
+}
+
+.index-wrapper > .footer > .footer-text p {
+  text-align: ;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.index-wrapper > .footer > .social-media-links {
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
+.index-wrapper > .footer > .social-media-links a {
+  padding: 10px;
+
+}
+
+.index-wrapper > .footer > .social-media-links img {
+  width: 30px;
+  height: 30px;
+  /* filter: grayscale(100%); */
+}

@@ -1,0 +1,54 @@
+.projects-wrapper {
+  display: grid;
+  /* display: grid; */
+  /* grid-column: 1fr 1fr 1fr;
+  /* grid-template-rows:; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows:  */
+  grid-row-gap: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  align-items: center;
+
+  /* z-index: -1; */
+}
+
+.projects-wrapper > .project-item {
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.projects-wrapper > .project-item img {
+  width: 500px;
+  border:1px solid #021a40;
+}
+
+.projects-wrapper > .project-item > .description {
+  display: flex;
+  margin-left: 50px;
+  /* justify-content: space-between; */
+  line-height: 1.8;
+  text-size: 1.2em;
+  font-family: Montserrat;
+  font-weight: 500;
+
+
+}
+
+.project-item > .description h2 {
+  margin-top: 0px;
+  font-family: monospace;
+}
+
+/*
+@media (min-width: 500px) {
+  .projects-wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "selfie selfie selfie"
+      "tech" "tech" "tech" "tech"
+      "footer footer footer";
+  } */
