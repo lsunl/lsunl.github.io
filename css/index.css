@@ -14,7 +14,7 @@
     --bg-color: #040408;
     --heading-color: white;
     --imgfilter: invert(1);
-
+    --giffilter: invert(100) hue-rotate(100deg);
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   width: 100%;
   background-color: var(--bg-color);
   overflow-x:hidden;
-  color: var(--secondary-color)
+  color: var(--font-color)
 }
 
 .index-wrapper {
@@ -35,6 +35,11 @@ body {
   grid-row: 1fr;
 
   /* grid-gap: 20px; */
+
+}
+
+h1 {
+  color: var(--font-color);
 
 }
 
@@ -141,12 +146,19 @@ body {
 }
 
 
-.index-wrapper > .footer > .social-media-links img {
+.social-media-links img {
   width: 30px;
   height: 30px;
   /* filter: grayscale(100%); */
   filter: var(--imgfilter);
 
+}
+
+.title img {
+  width: 30px;
+  height: 30px;
+  /* filter: grayscale(100%); */
+  filter: var(--imgfilter);
 }
 
 .social-media-links a:hover {
@@ -162,7 +174,8 @@ body {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 10%;
   /* width: 85%; */
 
 
