@@ -96,6 +96,11 @@ a:hover:not(.active) {
 
 }
 
+.latest-post {
+  margin-bottom: 2%;
+}
+
+
 .projects {
   display: grid;
   padding: 1rem;
