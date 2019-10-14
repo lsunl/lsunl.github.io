@@ -1,82 +1,3 @@
-.about-wrapper {
-  /* display: grid; */
-  /* grid-column: 1fr 1fr 1fr;
-  /* grid-template-rows:; */
-  /* grid-template-columns: 1fr; */
-  /* grid-template-rows:  */
-  /* grid-gap: 10px; */
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  align-items: center;
-  z-index: 0;
-}
-
-.name {
-  font-family: monospace;
-  font-size: 1.5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-left: 10px;
-  z-index: 1;
-  width: 280px;
-
-}
-/* 
-#sun {
-  color: blanchedalmond;
-} */
-
-.name h1 {
-  margin: 0px;
-}
-
-.name a:hover:not(.active) {
-  color: grey;
-  font-weight: bold;
-  transition: .3s;
-  font-style: italic;
-}
-
-.name a {
-  text-decoration: none;
-  color: black;
-}
-
-.fixed-nav > .menu-tab {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start; /* this is supposed to prevent the div from stretching but its not working */
-}
-
-.fixed-nav > .menu-tab a {
-  /* font-size: 1.2vw; */
-  background-color: var(--secondary-color);
-  padding: 0px 5px 0px 15px;
-  color: var(--primary-color);
-  border-radius: 2px;
-  float: right;
-  font-family: monospace;
-  text-decoration: none;
-  /* width: 90px; */
-  margin-left: auto;
-  margin-top: 10px;
-  text-align: right;
-  align-self: flex-start; /* this is supposed to prevent the div from stretching but its not working */
-}
-
-.fixed-nav > .menu-tab a:hover:not(.active) {
-  color: var(--primary-color);
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.5em;
-  transition: .3s;
-}
-
 .selfie {
   padding: 50px 20px;
   float: right;
@@ -103,15 +24,20 @@
   width: auto;
 }
 
-.about-wrapper > .about p {
-  font-size: 1.1em;
+.about {
+  padding: auto .5rem;
+  line-height: 1.6em;
+  margin-top: 5%;
+
 }
 
-.about-wrapper > .tech {
-  font-size: 1em;
-  padding-top: 20px;
+.tech {
+  padding-top: 2%;
 }
 
+.addpadd {
+  padding-top: 5%;
+}
 
 
 /* @media (min-width: 500px) {
