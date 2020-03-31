@@ -2,7 +2,8 @@
   padding: 50px 20px;
   float: right;
   width: 300px;
-  grid-column-start: 2;
+  /* grid-column-start: 2; */
+  /* clear:both; */
 
 }
 
@@ -40,11 +41,21 @@
 }
 
 
-/* @media (min-width: 500px) {
-  .about-wrapper {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-      "selfie selfie selfie"
-      "tech" "tech" "tech" "tech"
-      "footer footer footer";
-  } */
+@media screen and (max-width: 730px){
+.about-text {
+  overflow: hidden;
+  min-width: 100%;
+}
+.about {
+
+  display: inline-block;
+  float: none;
+  text-align: center;
+
+}
+.selfie {
+  display: inline-block;
+  float: none;
+  text-align: center;
+}
+}

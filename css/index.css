@@ -265,3 +265,10 @@ input:checked + .slider:before {
 
 
 }
+
+@media screen and (min-width: 768px){
+  .intro {
+    font-size: 1.7em;
+  }
+
+}
